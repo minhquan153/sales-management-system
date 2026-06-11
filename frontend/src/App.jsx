@@ -3,6 +3,7 @@ import "./App.css";
 import MainLayout from "./layouts/MainLayout.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
+import ProductsPage from "./pages/ProductsPage.jsx";
 import ProtectedRoute from "./routes/ProtectedRoute.jsx";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route element={<ProtectedRoute />}>
         <Route element={<MainLayout />}>
           <Route path="/" element={<DashboardPage />} />
+          <Route path="/products" element={<ProductsPage />} />
         </Route>
       </Route>
 

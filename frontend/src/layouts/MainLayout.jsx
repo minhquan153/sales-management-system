@@ -20,6 +20,7 @@ function MainLayout() {
 
         <nav>
           <NavLink to="/">Dashboard</NavLink>
+          <NavLink to="/products">Products</NavLink>
         </nav>
 
         <div className="sidebar-user">
